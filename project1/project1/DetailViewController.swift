@@ -6,6 +6,7 @@
 //  Copyright © 2016年 Minotake. All rights reserved.
 //
 
+import Social
 import UIKit
 
 class DetailViewController: UIViewController {
@@ -33,6 +34,8 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: #selector(shareTapped))
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,6 +51,20 @@ class DetailViewController: UIViewController {
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.hidesBarsOnTap = false
+    }
+    
+   // func shareTapped() {
+   //     let vc = UIActivityViewController(activityItems: [detailImageView.image!], applicationActivities: [])
+   //     vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+   //     presentViewController(vc, animated: true, completion: nil)
+   // }
+    
+    func shareTapped() {
+        let vc = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        vc.setInitialText("Look at this great picture!")
+        vc.addImage(detailImageView.image!)
+        vc.addURL(NSURL(string: "http://www.photolib.noaa.gov/nssl"))
+        presentViewController(vc, animated: true, completion: nil)
     }
 
 
