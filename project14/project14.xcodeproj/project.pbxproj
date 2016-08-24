@@ -29,6 +29,7 @@
 		EBC904961D6D33D000FF701D /* whackMask.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC904881D6D33D000FF701D /* whackMask.png */; };
 		EBC904971D6D33D000FF701D /* whackMask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC904891D6D33D000FF701D /* whackMask@2x.png */; };
 		EBC904991D6D33E300FF701D /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC904981D6D33E300FF701D /* Helper.swift */; };
+		EBC9049B1D6D358600FF701D /* WhackSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9049A1D6D358600FF701D /* WhackSlot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		EBC904881D6D33D000FF701D /* whackMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whackMask.png; sourceTree = "<group>"; };
 		EBC904891D6D33D000FF701D /* whackMask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whackMask@2x.png"; sourceTree = "<group>"; };
 		EBC904981D6D33E300FF701D /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = Content/Helper.swift; sourceTree = "<group>"; };
+		EBC9049A1D6D358600FF701D /* WhackSlot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhackSlot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				EBC904691D6D339E00FF701D /* GameScene.swift */,
 				EBC9046B1D6D339E00FF701D /* GameViewController.swift */,
 				EBC904981D6D33E300FF701D /* Helper.swift */,
+				EBC9049A1D6D358600FF701D /* WhackSlot.swift */,
 				EBC9046D1D6D339E00FF701D /* Main.storyboard */,
 				EBC904701D6D339E00FF701D /* Assets.xcassets */,
 				EBC904721D6D339E00FF701D /* LaunchScreen.storyboard */,
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBC9046A1D6D339E00FF701D /* GameScene.swift in Sources */,
+				EBC9049B1D6D358600FF701D /* WhackSlot.swift in Sources */,
 				EBC9046C1D6D339E00FF701D /* GameViewController.swift in Sources */,
 				EBC904661D6D339E00FF701D /* AppDelegate.swift in Sources */,
 				EBC904991D6D33E300FF701D /* Helper.swift in Sources */,
